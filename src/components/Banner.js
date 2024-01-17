@@ -2,11 +2,15 @@ import { Col, Container,Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/self-Porfolio.png'
 import { useEffect, useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
+import {
+    BrowserRouter as Router
+} from 'react-router-dom';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleted, setIsDeleted] = useState(false);
-    const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Perfectionist'];
+    const toRotate = ['Software Engineer', 'Web Developer', 'UI/UX Perfectionist'];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -40,24 +44,27 @@ export const Banner = () => {
     }
 
     return (
+        <Router>
         <section className="banner" id="home">
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
                         <span className='tagline'>Welcome to my Porfolio!</span>
                         <h1>{`Hi I'm Raul Damazo, `}<span className='wrap'>{text}</span></h1>
-                        <p> I am a full stack developer, specializing in the development of the frontend of applications implementing React and React Native, 
-                            always taking into consideration responsive web design and attention to detail, due to the high variety of devices being used today. 
+                        <p> I am a Full Stack Engineer, passionate in the development of the frontend and backend for all types of applications, but my specialty lies within the frontend.
+                            Always taking into consideration responsive web design and attention to detail.
                             As well as assembling code using problem solving skills efficiently and optimizing, to deliver a UI/UX that meets the expectations of its users. 
                         </p>
+                        <HashLink to='#connect'>
                         <button onClick={() => console.log('connect')}>Let's Connect!<ArrowRightCircle size={40} /></button>
+                        </HashLink>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img"/>
                     </Col>
                 </Row>
             </Container>
-
         </section>
+        </Router>
     )
 }

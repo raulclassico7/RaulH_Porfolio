@@ -7,13 +7,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log('Listening on port 5000'));
+app.listen(8000, () => console.log('Listening on port 5000'));
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'raulclassico7@gmail.com',
-        // pass: "" create a application password in order to access this feature
+        // pass: "" create a application password in order to access this feature "fdmu yajb oduo xsyx"
+        pass: 'fdmuyajboduoxsyx'
     }
 });
 
@@ -39,7 +40,7 @@ router.post('/contact', (req, res) => {
                 <p>Phone: ${phone}</p>
                 <p>Message: ${message}</p>`,
     };
-    contactEmail.sendEmail(mail, (error) => {
+    contactEmail.sendMail(mail, (error) => {
         if(error) {
             res.json(error);
         } else {

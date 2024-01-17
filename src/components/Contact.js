@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from '../assets/img/Contact-IMG.png';
-import 'animate.css';
-import TrackVisibility from "react-on-screen";
+
 
 
 export const Contact = () => {
@@ -28,7 +27,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText('Sending...');
-        const response = await fetch("http://localhost:5000/contact", {
+        let response = await fetch("http://localhost:8000/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8"

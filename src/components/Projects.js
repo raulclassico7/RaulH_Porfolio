@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Col, Container, Row, Nav, TabContainer, TabContent, TabPane } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard'; 
 import colorSharp2 from '../assets/img/color-sharp2.png';
@@ -33,7 +32,7 @@ export const Projects = () => {
     ]
 
     return (
-        <section className='project' id='project'>
+        <section className='project' id='projects'>
             <Container>
                 <Row>
                     <Col>
@@ -65,8 +64,8 @@ export const Projects = () => {
                                 }
                             </Row>
                         </TabPane>
-                        <TabPane eventKey="second">Second Content</TabPane>
-                        <TabPane eventKey="third">Third Content</TabPane>
+                        <TabPane eventKey="second">Currently updating the server...</TabPane>
+                        <TabPane eventKey="third">Currently updating the server..</TabPane>
                     </TabContent>
                     </TabContainer>
                     </Col>
