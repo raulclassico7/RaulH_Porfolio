@@ -5,30 +5,65 @@ import projImg3 from '../assets/img/Reactype-webShot1.png';
 import projImg4 from '../assets/img/Reactype-webshot2.png';
 import projImg1 from '../assets/img/Reactype-webshot3.png';
 import projImg2 from '../assets/img/Reactype-webshot4.png';
+import projImg5 from '../assets/img/SJ-Landing.png';
+import projImg6 from '../assets/img/SJ-Services.png';
+import projImg7 from '../assets/img/SJ-About.png';
+import projImg8 from '../assets/img/SJ-Appointment.png';
 
 
 export const Projects = () => {
-    const projects = [
+    const reacTypeProjects = [
       {
         title: "React Prototyping Tool",
         description: "Allows users to visualize their application architecture dynamically in real time",
         imgUrl: projImg1,
+        project: "Reactype",
       },
       {
         title: "Component Tree",
         description: "Review your component tree structure to keep track of parent and child components",
         imgUrl: projImg2,
+        project: "Reactype",
       },
       {
         title: "Live Code Preview",
         description: "See your code preview update in real time as you build your application and export code",
         imgUrl: projImg3,
+        project: "Reactype",
       },
       {
         title: "State Management",
         description: "React Hooks are enabled to handle your state across components",
         imgUrl: projImg4,
+        project: "Reactype",
       }
+    ]
+
+    const sanJuanProjects = [
+        {
+            title: "Home Page Display",
+            description: "Landing page with navbar, Social Media links, calling and setting appointment functionality",
+            imgUrl: projImg5,
+            project: "SJ",
+        },
+        {
+            title: "Business Services Collection",
+            description: "Collection of services the business provides",
+            imgUrl: projImg6,
+            project: "SJ",
+        },
+        {
+            title: "Business About Section",
+            description: "The About Section diplays information about the business and a call button functionality",
+            imgUrl: projImg7,
+            project: "SJ",
+        },
+        {
+            title: "Set-up Appointment Form",
+            description: "Appointment input form to schedule your next visit and contact the business directly",
+            imgUrl: projImg8,
+            project: "SJ",
+        },
     ]
 
     return (
@@ -44,7 +79,7 @@ export const Projects = () => {
                             <Nav.Link eventKey="first">ReacType</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Stacked Squad</Nav.Link>
+                            <Nav.Link eventKey="second">San Juan Automotive</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="third">
@@ -56,7 +91,7 @@ export const Projects = () => {
                         <TabPane eventKey="first">
                             <Row>
                                 {
-                                    projects.map((project, index) => {
+                                    reacTypeProjects.map((project, index) => {
                                         return (
                                             <ProjectCard key={index}{...project}/>
                                         )
@@ -64,7 +99,17 @@ export const Projects = () => {
                                 }
                             </Row>
                         </TabPane>
-                        <TabPane eventKey="second">Currently updating the server...</TabPane>
+                        <TabPane eventKey="second">
+                            <Row>
+                                {
+                                    sanJuanProjects.map((project, index) => {
+                                        return (
+                                            <ProjectCard key={index}{...project} />
+                                        )
+                                    })
+                                }
+                            </Row>
+                        </TabPane>
                         <TabPane eventKey="third">Currently updating the server..</TabPane>
                     </TabContent>
                     </TabContainer>
