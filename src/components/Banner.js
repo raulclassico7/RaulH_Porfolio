@@ -49,7 +49,7 @@ export const Banner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <span className='tagline'>Welcome to my Porfolio!</span>
+                        <span className='tagline'>Welcome to my Portfolio!</span>
                         <h1>{`Hi I'm Raul Damazo, `}<span className='wrap'>{text}</span></h1>
                         <p> I am a Full Stack Engineer driven to create innovative and immersive applications. My focus is crafting responsive, user-centric 
                             web designs, full-featured mobile apps and desktop applications. The attention to detail I implement into my work delivers an exceptional UI/UX. 
