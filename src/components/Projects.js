@@ -1,10 +1,10 @@
 import { Col, Container, Row, Nav, TabContainer, TabContent, TabPane } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard'; 
 import colorSharp2 from '../assets/img/color-sharp2.png';
-import projImg3 from '../assets/img/Reactype-webShot1.png';
-import projImg4 from '../assets/img/Reactype-webshot2.png';
-import projImg1 from '../assets/img/Reactype-webshot3.png';
-import projImg2 from '../assets/img/Reactype-webshot4.png';
+import projImg3 from '../assets/img/thirdReactImg.png';
+import projImg4 from '../assets/img/fourthReactImg.png';
+import projImg1 from '../assets/img/firstReactype1Img.png';
+import projImg2 from '../assets/img/secondReactImg.png';
 import projImg5 from '../assets/img/SJ-Landing.png';
 import projImg6 from '../assets/img/SJ-Services.png';
 import projImg7 from '../assets/img/SJ-About.png';
@@ -80,11 +80,6 @@ export const Projects = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">San Juan Automotive</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="third">
-                                Trivia Game Night
-                            </Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <TabContent>
