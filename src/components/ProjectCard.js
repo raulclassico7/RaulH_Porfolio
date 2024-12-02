@@ -11,6 +11,8 @@ export const ProjectCard = ({ title, description, imgUrl, project }) => {
             projectUrl = "https://www.reactype.dev/";
         } else if(project === "SJ") {
             projectUrl = "https://www.sanjuanautomotive.com/";
+        } else if(project === "Doka") {
+            projectUrl = "https://www.doka.ai/";
         }
 
     return (
