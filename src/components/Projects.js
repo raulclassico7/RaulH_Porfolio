@@ -104,7 +104,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                     <h2>Projects</h2>
-                    <p>My most up to date contract projects have been designed with a fully functional front-end and back-end using the most up to date technologies. </p>
+                    <p>My most up to date contract projects have been designed with a fully functional front-end and back-end using the most up to date technologies. Take a look. </p>
                     <TabContainer id="project-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                         <Nav.Item>
