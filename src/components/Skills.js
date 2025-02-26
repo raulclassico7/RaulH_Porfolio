@@ -37,8 +37,9 @@ export const Skills = () => {
                     <Col>
                         <div className='skill-bx'>
                             <h2>Tech Skills</h2>
-                            <p> TypeScript, React, React Hooks, Redux, Node.js, Express, RESTful API, SQL,  NoSQL, MongoDB, Webpack, Electron, Git,  Jest, Supertest, bcrypt, OOP, HTML5, CSS/SCSS, SASS.
-                                Experienced: HighCharts, Websockets, AWS, C#, Bootstrap, Enzyme, Mocha, React Native, Angular
+                            <p> JavaScript (ES6+), TypeScript, Nest.js, React, Redux, Angular, Node.js,   Express, RESTful APIs, Next.js, SQL, NoSQL, MongoDB, 
+                                Sequelize, Webpack, Jest, Supertest, OOP, HTML5, CSS/SCSS, SASS, bcrypt, Bootstrap, Material UI, Git, Github, Slack, Figma, 
+                                AWS (Ec2, S3, Cognito)
                             </p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                                 <div className='item'>
